@@ -5,8 +5,8 @@ phases:
       nodejs: 18  # Adjust based on your CDK project's requirements
     commands:
       - npm install -g aws-cdk
-      - npm install
       - pip --version
+      - pip install -r requirements.txt
   build:
     commands:
       - cdk synth
