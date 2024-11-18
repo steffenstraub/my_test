@@ -1,0 +1,50 @@
+{
+  "vpc-provider:account=429113693686:filter.tag:Name=UaPortalDbStack/portal-db-vpc:region=eu-central-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-098616615f44e68bc",
+    "vpcCidrBlock": "10.10.9.0/24",
+    "ownerAccountId": "429113693686",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "PublcRdsSubnet",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-0d2175b97d161c0ef",
+            "cidr": "10.10.9.0/26",
+            "availabilityZone": "eu-central-1a",
+            "routeTableId": "rtb-0ea99740a83285cd4"
+          },
+          {
+            "subnetId": "subnet-0cd6ccfed574c5eaf",
+            "cidr": "10.10.9.64/26",
+            "availabilityZone": "eu-central-1b",
+            "routeTableId": "rtb-0668bf9a055275149"
+          }
+        ]
+      },
+      {
+        "name": "PrivateRDSSubnet",
+        "type": "Isolated",
+        "subnets": [
+          {
+            "subnetId": "subnet-0126594426d685215",
+            "cidr": "10.10.9.128/26",
+            "availabilityZone": "eu-central-1a",
+            "routeTableId": "rtb-0f51580ba1cd87e16"
+          },
+          {
+            "subnetId": "subnet-07787ceb7469aeba2",
+            "cidr": "10.10.9.192/26",
+            "availabilityZone": "eu-central-1b",
+            "routeTableId": "rtb-0295cfc0c143a5c66"
+          }
+        ]
+      }
+    ]
+  },
+  "security-group:account=429113693686:region=eu-central-1:securityGroupId=sg-0397d4e23a3788a8a": {
+    "securityGroupId": "sg-0397d4e23a3788a8a",
+    "allowAllOutbound": false
+  }
+}
