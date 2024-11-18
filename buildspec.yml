@@ -2,7 +2,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 14  # Adjust based on your CDK project's requirements
+      nodejs: 18  # Adjust based on your CDK project's requirements
     commands:
       - npm install -g aws-cdk
       - npm install
